@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Simply put, when you declare the "charset" as
+         "UTF-8", you are telling your browser to 
+         use the UTF-8 character encoding, 
+         which is a method of converting 
+        your typed characters into machine-readable code.-->
+    <title>JavaScript - To Do List</title>
+    <!--The required rel attribute specifies
+        the current document and the linked document/resource.-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!--href (Hypertext REFerence) The HTML code used to create a link to another page
+     or the css stylesheets-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!--The class attribute is often used to point to a class name in a
+     style sheet. It can also be used by a JavaScript to access and
+      manipulate elements with the specific class name.-->
+    <div class="container">
+       <!-- The <div> tag defines a division or a section in an HTML document.-->
+        <div class="header">
+            <div class="clear">
+                <!--To insert an icon, add the name of the icon class to any inline HTML element.
+The <i> and <span> elements are widely used to add icons.-->
+                <i class="fa fa-refresh"></i>
+            </div>
+            <div id="date"></div>
+            <!--The id attribute specifies a unique id for an HTML element -->
+        </div>
+        <div class="content">
+            <ul id="list">
+                <!--ul is used for unordered list of items-->
+            </ul>
+        </div>
+        <div class="add-to-do">
+            <i class="fa fa-plus-circle"></i>
+            <input type="text" id="input" placeholder="CLICK HERE TO Add a to-do">
+        </div>
+    </div>
+    <!--script src for linking your javascript file-->
+    <script src="js/app.js"></script>
+</body>
+</html>
